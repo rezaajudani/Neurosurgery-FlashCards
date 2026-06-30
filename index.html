@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeuroCards Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <h1>🧠 NeuroCards Pro</h1>
+
+  <div class="card">
+    <h2 id="question">آماده شروع...</h2>
+    <p id="answer" style="display:none;"></p>
+  </div>
+
+  <div class="buttons">
+    <button onclick="flip()">نمایش جواب</button>
+    <button onclick="good()">بلد بودم</button>
+    <button onclick="bad()">بلد نبودم</button>
+    <button onclick="deleteCard()">حذف کارت</button>
+  </div>
+
+  <hr>
+
+  <h3>📚 مدیریت</h3>
+
+  <button onclick="addChapter()">➕ افزودن فصل</button>
+  <button onclick="selectChapter()">📖 انتخاب فصل</button>
+  <button onclick="addBatchCards()">➕ وارد کردن 100 کارت</button>
+
+  <hr>
+
+  <h3>📘 کتاب‌ها</h3>
+
+  <button onclick="setBook('youmans')">Youmans</button>
+  <button onclick="setBook('snell')">Snell</button>
+  <button onclick="setBook('merritt')">Merritt</button>
+  <button onclick="setBook('guyton')">Guyton</button>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
